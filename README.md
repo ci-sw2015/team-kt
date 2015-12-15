@@ -26,4 +26,4 @@ Wie unterscheiden sich diese von Checkstyle?
 
 
 ---
-eine kleine Änderung
+Eine kleine Änderung
