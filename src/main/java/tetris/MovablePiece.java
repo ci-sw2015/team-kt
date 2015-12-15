@@ -25,13 +25,11 @@ public class MovablePiece implements Grid {
         this.rel = rel;
         this.piece = piece;
     }
-
+ 
     public boolean outsideBoard(int boardRows) {
         for (Point loc : Grids.allPointsOf(this)) {
-            if (piece.cellAt(loc) != EMPTY) {
-                if (asAbs(loc).row >= boardRows) {
-                    return true;
-                }
+            if (piece.cellAt(loc) != EMPTY && asAbs(loc).row >= boardRows) {
+	            return true;
             }
         }
         return false;
